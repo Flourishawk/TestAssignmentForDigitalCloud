@@ -5,7 +5,135 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAssignmentForDigitalCloud"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        ResizeMode="CanResize"
+        MinHeight="650"
+        MinWidth="1200">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Background="#0c0e0f" Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+        </StackPanel>
+
+   
+            <Grid Grid.Row="1" Background="#0c0e0f"></Grid>
+
+        
+        <Border Grid.Row="1" Grid.RowSpan="2" Background="#181a1d" CornerRadius="20,20,0,0">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+
+            <Grid Margin="20,20,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0" Background="#181a1d" BorderBrush="#181a1d" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#0c0e0f" Grid.Row="0" Orientation="Horizontal">
+                            <Button Foreground="#BBBBBB" FontSize="11" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Stretch" Padding="20,0,20,0" FontWeight="Bold">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Foreground" Value="#BBBBBB" />
+                                        <!-- Звичайний стан -->
+
+                                        <Style.Triggers>
+                                            <!-- Наведення мишею -->
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                
+                                                <Setter Property="Foreground" Value="#FFFFFF" />
+                                                <Setter Property="Background" Value="Transparent" />
+                                                <!-- Колір при наведенні -->
+                                            </Trigger>
+
+                                            <!-- Активний стан (наприклад, після натискання) -->
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="Foreground" Value="#FF0000" />
+                                                <!-- Колір при натисканні -->
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                OVERVIEW
+                            </Button>
+                            <TextBlock Foreground="#BBBBBB" Padding="20,0,20,0" FontWeight="Bold" VerticalAlignment="Center">HISTORY PRICE</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="1" Background="#181a1d" BorderBrush="#181a1d" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#0c0e0f" Grid.Row="1" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="2" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="2" Orientation="Horizontal">
+                    </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="3" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="3" Orientation="Horizontal">
+                    </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="4" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="4" Orientation="Horizontal">
+                    </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="5" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="5" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="6" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="6" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="7" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="7" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="8" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="8" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="9" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="9" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="10" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="10" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="11" Background="#424547" BorderBrush="#424547" BorderThickness="0,0,0,1.5">
+                        <StackPanel Background="#262a2d" Grid.Row="11" Orientation="Horizontal">
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+            </ScrollViewer>
+        </Border>
+        
     </Grid>
 </Window>
